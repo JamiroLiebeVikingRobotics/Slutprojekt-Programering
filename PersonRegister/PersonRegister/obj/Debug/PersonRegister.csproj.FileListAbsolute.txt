@@ -1,0 +1,10 @@
+C:\Users\Jamiro\source\repos\PersonRegister\PersonRegister\bin\Debug\PersonRegister.exe.config
+C:\Users\Jamiro\source\repos\PersonRegister\PersonRegister\bin\Debug\PersonRegister.exe
+C:\Users\Jamiro\source\repos\PersonRegister\PersonRegister\bin\Debug\PersonRegister.pdb
+C:\Users\Jamiro\source\repos\PersonRegister\PersonRegister\obj\Debug\PersonRegister.csprojAssemblyReference.cache
+C:\Users\Jamiro\source\repos\PersonRegister\PersonRegister\obj\Debug\PersonRegister.Form1.resources
+C:\Users\Jamiro\source\repos\PersonRegister\PersonRegister\obj\Debug\PersonRegister.Properties.Resources.resources
+C:\Users\Jamiro\source\repos\PersonRegister\PersonRegister\obj\Debug\PersonRegister.csproj.GenerateResource.cache
+C:\Users\Jamiro\source\repos\PersonRegister\PersonRegister\obj\Debug\PersonRegister.exe
+C:\Users\Jamiro\source\repos\PersonRegister\PersonRegister\obj\Debug\PersonRegister.pdb
+C:\Users\Jamiro\source\repos\PersonRegister\PersonRegister\obj\Debug\PersonRegister.listForm.resources
