@@ -34,7 +34,8 @@ namespace PersonRegister
 
         private void searchPersonBox_Click(object sender, EventArgs e)
         {
-            
+            searchForm newform = new searchForm();
+            newform.Show();
         }
 
         private void toListBtn_Click(object sender, EventArgs e)

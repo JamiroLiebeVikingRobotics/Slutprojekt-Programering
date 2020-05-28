@@ -40,6 +40,10 @@
             this.saveBttn = new System.Windows.Forms.Button();
             this.listPerson = new System.Windows.Forms.ListBox();
             this.ageListBox = new System.Windows.Forms.ListBox();
+            this.searchBox = new System.Windows.Forms.TextBox();
+            this.searchButton = new System.Windows.Forms.Button();
+            this.searchResultBox = new System.Windows.Forms.ListBox();
+            this.searchKey = new System.Windows.Forms.TextBox();
             firstNameLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -133,7 +137,7 @@
             this.saveBttn.Enabled = false;
             this.saveBttn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.saveBttn.ForeColor = System.Drawing.Color.Black;
-            this.saveBttn.Location = new System.Drawing.Point(172, 360);
+            this.saveBttn.Location = new System.Drawing.Point(53, 268);
             this.saveBttn.Name = "saveBttn";
             this.saveBttn.Size = new System.Drawing.Size(113, 52);
             this.saveBttn.TabIndex = 15;
@@ -148,6 +152,7 @@
             this.listPerson.Name = "listPerson";
             this.listPerson.Size = new System.Drawing.Size(348, 186);
             this.listPerson.TabIndex = 16;
+            this.listPerson.SelectedIndexChanged += new System.EventHandler(this.listPerson_SelectedIndexChanged);
             // 
             // ageListBox
             // 
@@ -158,11 +163,54 @@
             this.ageListBox.TabIndex = 17;
             this.ageListBox.SelectedIndexChanged += new System.EventHandler(this.ageListBox_SelectedIndexChanged);
             // 
+            // searchBox
+            // 
+            this.searchBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.searchBox.Location = new System.Drawing.Point(401, 279);
+            this.searchBox.Name = "searchBox";
+            this.searchBox.ReadOnly = true;
+            this.searchBox.Size = new System.Drawing.Size(113, 32);
+            this.searchBox.TabIndex = 19;
+            this.searchBox.Text = "Sök Ålder:";
+            this.searchBox.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            // 
+            // searchButton
+            // 
+            this.searchButton.Location = new System.Drawing.Point(757, 279);
+            this.searchButton.Name = "searchButton";
+            this.searchButton.Size = new System.Drawing.Size(75, 23);
+            this.searchButton.TabIndex = 21;
+            this.searchButton.Text = "Sök";
+            this.searchButton.UseVisualStyleBackColor = true;
+            this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
+            // 
+            // searchResultBox
+            // 
+            this.searchResultBox.FormattingEnabled = true;
+            this.searchResultBox.Location = new System.Drawing.Point(520, 333);
+            this.searchResultBox.Name = "searchResultBox";
+            this.searchResultBox.Size = new System.Drawing.Size(215, 134);
+            this.searchResultBox.TabIndex = 22;
+            this.searchResultBox.SelectedIndexChanged += new System.EventHandler(this.searchResultBox_SelectedIndexChanged);
+            // 
+            // searchKey
+            // 
+            this.searchKey.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.searchKey.Location = new System.Drawing.Point(520, 279);
+            this.searchKey.Name = "searchKey";
+            this.searchKey.Size = new System.Drawing.Size(215, 32);
+            this.searchKey.TabIndex = 18;
+            this.searchKey.TextChanged += new System.EventHandler(this.searchKey_TextChanged);
+            // 
             // listForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(944, 495);
+            this.Controls.Add(this.searchResultBox);
+            this.Controls.Add(this.searchButton);
+            this.Controls.Add(this.searchBox);
+            this.Controls.Add(this.searchKey);
             this.Controls.Add(this.ageListBox);
             this.Controls.Add(this.listPerson);
             this.Controls.Add(this.saveBttn);
@@ -176,7 +224,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "listForm";
-            this.Text = "Form3";
+            this.Text = "Lista";
             this.Load += new System.EventHandler(this.listForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -196,5 +244,9 @@
         private System.Windows.Forms.Button saveBttn;
         private System.Windows.Forms.ListBox listPerson;
         private System.Windows.Forms.ListBox ageListBox;
+        private System.Windows.Forms.TextBox searchBox;
+        private System.Windows.Forms.Button searchButton;
+        private System.Windows.Forms.ListBox searchResultBox;
+        private System.Windows.Forms.TextBox searchKey;
     }
 }
